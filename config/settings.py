@@ -46,7 +46,7 @@ PROJECT_APPS = [
     "rooms.apps.RoomsConfig",
 ]
 
-THIRD_PARTY_APPS = []
+THIRD_PARTY_APPS = ["graphene_django"]
 
 INSTALLED_APPS = DJANGO_APPS + PROJECT_APPS + THIRD_PARTY_APPS
 
@@ -132,3 +132,7 @@ MEDIA_URL = "/media/"
 # Auth
 
 AUTH_USER_MODEL = "users.User"
+
+# Default Auto Field
+
+DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
