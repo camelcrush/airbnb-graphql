@@ -136,3 +136,9 @@ AUTH_USER_MODEL = "users.User"
 # Default Auto Field
 
 DEFAULT_AUTO_FIELD = "django.db.models.AutoField"
+
+# GraphQL
+
+GRAPHENE = {
+    "MIDDLEWARE": ("config.middlewares.JWTMiddleware",),
+}
